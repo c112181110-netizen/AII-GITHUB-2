@@ -1,0 +1,52 @@
+## Docker
+Dockerfile
+.dockerignore
+.docker/host/
+.docker/*.bash
+
+## Docker Compose
+docker-compose.yml
+.env
+
+## Dev Container
+.devcontainer/
+
+## Git
+.git/
+.gitignore
+
+## GitHub
+.github/
+
+## Pre-commit
+.git_hooks/
+.pre-commit-config.yaml
+
+## Markdown
+**/CHANGELOG.md
+
+### Inherited from gitignore ###
+## Python
+**/__pycache__/
+**/.pytest_cache/
+**/*.pcd
+**/*.py[cod]
+**/*.pyc
+**/*$py.class
+
+## Shared Objects
+**/*.so
+
+## Virtual environments
+.env/
+.venv/
+env.bak/
+env/
+ENV/
+venv.bak/
+venv/
+
+## ROS 2 & Colcon
+build/
+install/
+log/

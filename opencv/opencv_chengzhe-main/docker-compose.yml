@@ -1,0 +1,22 @@
+services:
+  opencv_ros:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: opencv_ros:jazzy
+    container_name: opencv_ros
+    network_mode: host
+    stdin_open: true
+    tty: true
+    working_dir: /workspace/OpenCV_ROS
+    environment:
+      DISPLAY: ${DISPLAY:-}
+      WAYLAND_DISPLAY: ${WAYLAND_DISPLAY:-}
+      XDG_RUNTIME_DIR: ${XDG_RUNTIME_DIR:-}
+      ROS_DOMAIN_ID: ${ROS_DOMAIN_ID:-0}
+    volumes:
+      - ./:/workspace/OpenCV_ROS
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    # Uncomment when you need direct USB camera access in container.
+    # devices:
+    #   - /dev/video0:/dev/video0

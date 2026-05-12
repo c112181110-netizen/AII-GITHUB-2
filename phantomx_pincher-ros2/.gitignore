@@ -1,0 +1,24 @@
+## Python
+**/__pycache__/
+**/.pytest_cache/
+**/*.pcd
+**/*.py[cod]
+**/*.pyc
+**/*$py.class
+
+## Shared Objects
+**/*.so
+
+## Virtual environments
+.env/
+.venv/
+env.bak/
+env/
+ENV/
+venv.bak/
+venv/
+
+## ROS 2 & Colcon
+build/
+install/
+log/
